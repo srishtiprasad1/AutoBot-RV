@@ -1,0 +1,44 @@
+.cardparent {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+.containercard {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100vw;
+    height: 200px; /* Adjust height as needed */
+    position: relative;
+}
+.animation-wrapper {
+    display: flex;
+    width: 100%;
+    animation: moveLeft 25s linear alternate-reverse infinite;
+}
+.cardxyz {
+    width: 250px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border: 5px solid #efcbcb;
+    border-radius: 10px;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    text-align: center;
+}
+.cardxyz h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+.cardxyz p {
+    margin: 10px 0 0;
+}
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
